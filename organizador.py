@@ -61,11 +61,11 @@ def agrupar_pais_medallas(key,values):
 
     yield key ,(oro, plata, bronce, len(years), len(nombres), sum(hombres.values()), sum(mujeres.values()))
 
-def mapper2(key,value):
+def agrupa_para_sort(key,value):
     yield " ", (key,) + value
 
 
-def reducer2(key,values):
+def sort_oros(key,values):
     values = list(values)
     yield key, sorted(values, key=lambda x: -x[1])
 
@@ -75,5 +75,5 @@ if __name__ == "__main__":
 
     job = dumbo.Job()
     job.additer(parse_dataSetOlimpiadas, agrupar_pais_medallas)
-    job.additer(mapper2,reducer2)
+    job.additer(agrupa_para_sort,sort_oros)
     job.run()
