@@ -7,7 +7,7 @@ PAIS, NUMERO DE OROS, NUMERO DE PLATAS, NUMERO DE BRONCES, NUMERO DE AÑOS DISTI
 
 Para grabar los resultados en el fichero resultados:
 ```
-dumbo start organizador_pais.py -input datasetOlimpiadas.csv -output resultados -overwrite yes
+dumbo start organizador_pais.py -input datasetOlimpiadas.csv -output resultados_pais -overwrite yes
 ```
 
 
@@ -20,8 +20,10 @@ PERSONA
 
 Para grabar los resultados en el fichero resultados:
 ```
-dumbo start organizador_personas.py -input datasetOlimpiadas.csv -output resultados -overwrite yes
+dumbo start organizador_personas.py -input datasetOlimpiadas.csv -output resultados_personas -overwrite yes
 ```
+
+
 
 Para mostrar resultados:
 ```
