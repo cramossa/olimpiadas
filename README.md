@@ -7,7 +7,7 @@ PAIS, NUMERO DE OROS, NUMERO DE PLATAS, NUMERO DE BRONCES, NUMERO DE AÑOS DISTI
 
 Para grabar los resultados en el fichero resultados:
 ```
-dumbo start organizador_pais.py -input datasetOlimpiadas.csv -output resultados_pais -overwrite yes
+dumbo start organizador_pais.py -input datasetOlimpiadas.csv -output resultados -overwrite yes
 ```
 
 
@@ -16,7 +16,7 @@ dumbo start organizador_pais.py -input datasetOlimpiadas.csv -output resultados_
 #### Organizador_personas
 
 Organiza el fichero datasetOlimpiadas.csv organizado por el siguiente estilo:
-PERSONA
+PERSONA, PAIS, NUMERO DE OROS, NUMERO DE PLATAS, NUMERO DE BRONCES, AÑOS DISTINTOS, DISCIPLINAS DISTINTAS
 
 Para grabar los resultados en el fichero resultados:
 ```
